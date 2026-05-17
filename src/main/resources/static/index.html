@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobConnect - Find Your Dream Job</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">🚀 JobConnect</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" id="navLinks">
+                    <!-- Nav links will be populated by JS -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-2" href="register.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Discover Your Next Career Move</h1>
+            <p>Connect with top employers and find the perfect job that matches your skills.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#jobsSection" class="btn btn-light btn-lg px-4">Browse Jobs</a>
+                <a href="register.html" class="btn btn-outline-light btn-lg px-4">Post a Job</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Jobs Section -->
+    <section id="jobsSection" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Latest Job Openings</h2>
+            <div class="row g-4" id="recentJobsList">
+                <div class="col-12 text-center">
+                    <div class="spinner-border text-primary" role="status"></div>
+                    <p class="mt-2">Loading jobs...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 JobConnect. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS & App Logic -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadRecentJobs();
+            checkAuthAndUpdateNav();
+        });
+    </script>
+</body>
+</html>
