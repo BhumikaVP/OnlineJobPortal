@@ -108,22 +108,29 @@ MySQL Database
 
 ## Screenshots
 
-Add screenshots here after uploading them.
+### Home Page
+![Home](screenshots/mainpage.png)
 
 ### Login Page
 ![Login](screenshots/login.png)
 
 ### Register Page
-![Register](screenshots/register.png)
+![Register](screenshots/signuppages.png)
 
-### Job Listings
-![Jobs](screenshots/jobs.png)
+### Job Seeker Dashboard
+![Jobs](screenshots/jobsavailable.png)
+
+### My Applications
+![Applications](screenshots/myapplicationstatus.png)
+
+### Resume Upload
+![Resume](screenshots/resumeupload.png)
 
 ### Recruiter Dashboard
 ![Recruiter](screenshots/recruiter.png)
 
-### Admin Dashboard
-![Admin](screenshots/admin.png)
+### Applicant Management
+![Applicants](screenshots/applicationstatus.png)
 
 ---
 
